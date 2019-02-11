@@ -87,27 +87,27 @@ nav a
 }
 
 
-a:link
+nav a:link
 {
 	color: white;
 	background-color: hsla(0, 0%, 42%, 0.4);
 	text-decoration: none;
 }
 
-a:visited 
+nav a:visited 
 {
 	color: white;
 	background-color: hsla(0, 0%, 42%, 0.4);
 	text-decoration: none;
 }
 
-a:hover
+nav a:hover
 {
 	color: hsla(0, 0%, 100%, 0.7);
 	background-color: hsl(0, 0%, 42%, 0.7);
 }
 
-a:active
+nav a:active
 {
 	color: hsla(0, 0%, 100%, 0.7);
 	background-color: hsl(0, 0%, 42%, 0.7);
