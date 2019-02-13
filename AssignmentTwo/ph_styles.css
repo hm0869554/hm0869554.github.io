@@ -4,13 +4,19 @@
 	font-family: Champagne;
 	src: url(cac_champagne.woff) format('woff'),
 	url(cac_champagne.ttf) format('ttf');
+}
 
+@font-face
+{
 	font-family: Grunge;
-	src: url(1942.woff) format('woff')
+	src: url(1942.woff) format('woff'),
 	url(1942.tff) format('tff');
+}
 
+@font-face
+{
 	font-family: Dobkin;
-	src: url(DobkinPlain.woff) format('woff')
+	src: url(DobkinPlain.woff) format('woff'),
 	url(DobkinPlain.tff) format('tff')
 }
 /*
@@ -37,7 +43,7 @@ html
 body
 {
 	background-color: hsl(58, 31%, 84%);
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
 }
 
 
@@ -81,7 +87,7 @@ address
 /* Navigation Styles */
 nav a
 {
-	font-family: "Trebuchet MS", Helvetica, sans-serif ;
+	font-family: 'Trebuchet MS', Helvetica, sans-serif ;
 	padding-bottom: 10px;
 	padding-top; 10px;
 }
@@ -117,7 +123,90 @@ nav a:active
 
 /* Section Styles */
 
+section.playbill h1
+{
+	font-size: 3em;
+	font-weight: normal;
+	margin: 0px;
+	padding-top: 20px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+}
 
+#play1
+{
+	background-color: hsl(240, 100%, 88%);
+}
 
+#play2
+{
+	background-color: hsl(25, 88%, 73%);
+}
+
+#play3
+{
+	background-color: hsl(0, 100%, 75%);
+}
+
+#play4
+{
+	background-color: hsl(296, 86%, 86%);
+}
+	/*Play Header Fonts*/
+#play1 h1
+{
+	font-family: Champagne, cursive;
+}
+
+#play2 h1
+{
+	font-family: Grunge, 'Times New Roman', Times, serif;
+}
+
+#play3 h1
+{
+	font-family: Impact, Charcoal, sans-serif;
+}
+
+#play4 h1
+{
+	font-family: Dobkin, cursive;
+}
 
 /* Description List Styles */
+
+dt
+{
+	font-size: 1.3em;
+	font-weight: bold;
+	color: hsla (0, 0%, 0%, 0.4);
+}
+
+dd
+{
+	font-size: 1.3em;
+	margin-left: 0px;
+	margin-botton: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
