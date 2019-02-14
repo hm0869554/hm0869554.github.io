@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+/*
+Styles Sheet for Diet Water
+Author: Hunter Murphy
+Date:2/13/2019
+Assignment: ProjectOne/ Diet Water
+*/
+
+html
+{
+	background-color: hsl(244, 3%, 50%);
+	color: white;
+}
+
