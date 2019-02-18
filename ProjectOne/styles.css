@@ -9,7 +9,39 @@ Assignment: ProjectOne/ Diet Water
 
 html
 {
-	background-color: hsl(244, 3%, 50%);
+	background-color: hsl(219, 25%, 39%);
 	color: white;
 }
 
+#main
+{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#contact
+{
+	width: 60%;
+	padding-top:0px ;
+	padding-bottom: 0px:
+}
+
+a
+{
+	color: hsl(245, 100%, 45%);
+}
+
+a:visited
+{
+	color: hsl(299, 100%, 50%) ;
+}
+
+a:hover
+{
+	color: hsl(179, 99%, 42%);
+}
+
+a:focus
+{
+	color: hsl(179, 99%, 42%);
+}
