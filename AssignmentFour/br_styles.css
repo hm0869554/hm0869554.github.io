@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 4
+   Case Problem 4
+   
+   Browyer Realty Layout Styles
+   Author: Hunter Murphy
+   Date: 3/20/2019
+	
+   Filename: br_styles.css
+
+*/
+html
+{
+	max-width:1000px;
+	margin:auto
+}
+header
+{
+	text-align:center;
+}
+#listing
+{
+	float:right;
+	width:750px;
+}
+
+#listingDescription
+{
+	float:left;
+	width: 200px;
+}
+
+footer
+{
+	text-align:center;
+}
