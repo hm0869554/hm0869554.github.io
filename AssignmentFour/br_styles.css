@@ -12,28 +12,58 @@
    Filename: br_styles.css
 
 */
+
+/*Styling for the whole page*/
+
 html
 {
-	max-width:1000px;
-	margin:auto
+	max-width:900px;
+	margin:auto;
+	background-image: url(br_paper.png)
 }
+
+
+/*Text Styles*/
+
 header
 {
 	text-align:center;
 }
+
 #listing
 {
-	float:right;
-	width:750px;
+	float:left;
+	width:650px;
+	height:250px;
+	padding-right:20px;
+	background-color:white;
 }
 
-#listingDescription
+#description
 {
-	float:left;
-	width: 200px;
+	float:right;
+	width:200px;
+	height:250px;
+	background-color:red;
+	color:white;
+	padding-left:14px;
 }
 
 footer
 {
 	text-align:center;
+	padding-top:25px;
 }
+
+div
+{
+	background-color:white;
+}
+
+
+
+
+
+
+
+
