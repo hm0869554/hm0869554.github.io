@@ -17,9 +17,10 @@
 
 html
 {
-	max-width:900px;
+	max-width:1000px;
 	margin:auto;
-	background-image: url(br_paper.png)
+	background-image: url(br_paper.png);
+	background-color:black;
 }
 
 
@@ -30,37 +31,70 @@ header
 	text-align:center;
 }
 
+section
+{
+	background:black;
+}
+
 #listing
 {
 	float:left;
-	width:650px;
-	height:250px;
-	padding-right:20px;
-	background-color:white;
+	width:740px;
+	height:260px;
+	padding-right:14px;
+	padding-left:10px;
+	font-size:18px;
+	background-color:black;
+	color:white;
+	overflow:hidden;
+	
 }
 
 #description
-{
-	float:right;
+{	float:right;
 	width:200px;
 	height:250px;
-	background-color:red;
+	background-color:black;
 	color:white;
-	padding-left:14px;
+	padding-left:10px;
+	overflow:hidden;
+	border-style:solid;
+	border-color:blue;
+	border-width:5px;
+	
 }
 
-footer
-{
-	text-align:center;
-	padding-top:25px;
-}
+
 
 div
 {
 	background-color:white;
 }
 
+li
+{
+	text-align:left;
+}
 
+/*Navigation Styling*/
+nav
+{
+	background-color: rgb(1,1,1);
+	padding-bottom:5px;
+	display:flex;
+	justify-content:space-around;
+}
+
+footer
+{
+	text-align:center;
+	padding-top:15px;
+	display:flex;
+	justify-content:space-around;
+}
+
+
+/*Image Styling*/
 
 
 
