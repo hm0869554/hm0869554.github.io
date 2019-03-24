@@ -31,6 +31,11 @@ header
 	text-align:center;
 }
 
+h1,h3,strong
+{
+	text-shadow: 2px 2px rgb(1,1,1);
+}
+
 section
 {
 	background:black;
@@ -40,63 +45,70 @@ section
 {
 	float:left;
 	width:740px;
-	height:260px;
+	height:255px;
 	padding-right:14px;
 	padding-left:10px;
 	font-size:18px;
-	background-color:black;
+	background-color:rgb(125,125,125);
 	color:white;
 	overflow:hidden;
 	
+}
+
+footer
+{
+	text-align:center;
+	text-align:center;
+}
+
+/*Aside Styling*/
+li
+{
+	text-align:left;
 }
 
 #description
 {	float:right;
 	width:200px;
 	height:250px;
-	background-color:black;
+	background-color:rgb(200,1,1);
 	color:white;
 	padding-left:10px;
 	overflow:hidden;
 	border-style:solid;
-	border-color:blue;
-	border-width:5px;
-	
-}
-
-
-
-div
-{
-	background-color:white;
-}
-
-li
-{
-	text-align:left;
+	border-width:2px;
+	border-color:black;
 }
 
 /*Navigation Styling*/
 nav
 {
-	background-color: rgb(1,1,1);
-	padding-bottom:5px;
+	background-color: rgb(200,1,1);
+	padding:5px 0px;
 	display:flex;
 	justify-content:space-around;
 }
 
-footer
+a
 {
-	text-align:center;
-	padding-top:15px;
-	display:flex;
-	justify-content:space-around;
+	border-style:solid;
+	border-color:black;
+	border-width:2px;
+	border-radius:10px;
+	padding:3px;
 }
 
+a:link
+{
+	color:white
+}
 
 /*Image Styling*/
 
-
+div
+{
+	background-color:rgb(125,125,125);
+}
 
 
 
