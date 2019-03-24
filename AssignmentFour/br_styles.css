@@ -31,9 +31,14 @@ header
 	text-align:center;
 }
 
-h1,h3,strong
+h1
 {
-	text-shadow: 2px 2px rgb(1,1,1);
+	text-shadow: 2px 1px rgb(105, 131, 173);
+}
+
+h3, strong
+{
+	text-shadow: 1px 1px rgb(40,40,200);
 }
 
 section
@@ -45,12 +50,12 @@ section
 {
 	float:left;
 	width:740px;
-	height:255px;
+	height:225px;
 	padding-right:14px;
 	padding-left:10px;
 	font-size:18px;
-	background-color:rgb(125,125,125);
-	color:white;
+	background-color:rgb(154, 191, 249);
+	color:black;
 	overflow:hidden;
 	
 }
@@ -70,9 +75,9 @@ li
 #description
 {	float:right;
 	width:200px;
-	height:250px;
-	background-color:rgb(200,1,1);
-	color:white;
+	height:220px;
+	background-color:rgb(80,80,255);
+	color:black;
 	padding-left:10px;
 	overflow:hidden;
 	border-style:solid;
@@ -83,8 +88,7 @@ li
 /*Navigation Styling*/
 nav
 {
-	background-color: rgb(200,1,1);
-	padding:5px 0px;
+	background-color: rgb(80,80,255);
 	display:flex;
 	justify-content:space-around;
 }
@@ -93,23 +97,35 @@ a
 {
 	border-style:solid;
 	border-color:black;
-	border-width:2px;
+	border-width:2.5px;
+	border-bottom-width:1px;
+	border-top-width:1px;
 	border-radius:10px;
-	padding:3px;
+	padding:5px 3px;
+	background-color:rgb(154, 191, 249);
 }
 
 a:link
 {
-	color:white
+	color:black;
 }
 
 /*Image Styling*/
 
 div
 {
-	background-color:rgb(125,125,125);
+	background-color:rgb(154, 191, 249);
 }
 
+.column 
+{ float:left;
+  width: 30%;
+  padding-left:23px;
+}
 
-
-
+.row::after 
+{
+  content: "";
+  clear: both;
+  display: table;
+}
