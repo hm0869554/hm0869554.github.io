@@ -113,6 +113,20 @@ a:link
 	color:black;
 }
 
+a:visited
+{
+	color:teal;
+}
+
+a:hover
+{
+	color:teal;
+}
+
+a:active
+{
+	color:black;
+}
 /*Image Styling*/
 
 div
