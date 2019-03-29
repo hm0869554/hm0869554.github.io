@@ -23,8 +23,19 @@
 
 /* Flex Layout Styles */
 
+body
+{
+	display:flex;
+	flex-direction: row;
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	word-wrap: break-word;
+}
 
-
+#sheet
+{
+	
+}
 
 
 /* ============================================
