@@ -85,7 +85,7 @@ article
 		flex-direction: row;
 		display:-webkit-flex;
 		-webkit-flex-direction:row;
-		flex-wrap: no-wrap;
+		flex-wrap: nowrap;
 		height:40px;
 	}
 	
