@@ -56,17 +56,19 @@ article
 {
 	.panel
 	{
-		min-width:100%
+		width:100%
 	}
 	
 	nav
 	{
 		order:99;
+		-webkit-order: 99;
 	}
 	
 	body>footer
 	{
 		order:100;
+		-webkit-order:100;
 	}
 }
 
@@ -80,6 +82,34 @@ article
 	nav>ul
 	{
 		display:flex;
-		flex-direction:
+		flex-direction: row;
+		display:-webkit-flex;
+		-webkit-flex-direction:row;
+		flex-wrap: no-wrap;
+		height:40px;
+	}
+	
+	nav>ul>li
+	{
+		flex-grow:1;
+		flex-shrink:1;
+		flex-basis:auto;
+	}
+	
+	.size1
+	{
+		width:100%
+	}
+	.size2
+	{
+		width:60%
+	}
+	.size3
+	{
+		width:40%
+	}
+	.size4
+	{
+		width:30%
 	}
 }
