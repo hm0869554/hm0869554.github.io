@@ -25,16 +25,25 @@
 
 body
 {
-	display:flex;
+	display: flex;
 	flex-direction: row;
 	display: -webkit-flex;
 	-webkit-flex-direction: row;
-	word-wrap: break-word;
+	flex-wrap: wrap;
 }
 
 #sheet
 {
-	
+	flex-basis: 301px;
+	flex-grow: 3;
+	flex-shrink: 1;
+}
+
+article
+{
+	flex-basis: 180px;
+	flex-grow: 1;
+	flex-shrink: 3;
 }
 
 
@@ -43,8 +52,13 @@ body
    ============================================
 */
 
-
-
+@media handheld and (max-width: 480px)
+{
+	.panel img
+	{
+		width:100%
+	}
+}
 
 /* ===================================================
 	Tablet and Desktop Devices: Greater than 480 pixels
