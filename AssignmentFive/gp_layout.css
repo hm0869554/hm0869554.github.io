@@ -54,9 +54,19 @@ article
 
 @media handheld and (max-width: 480px)
 {
-	.panel img
+	.panel
 	{
-		width:100%
+		min-width:100%
+	}
+	
+	nav
+	{
+		order:99;
+	}
+	
+	body>footer
+	{
+		order:100;
 	}
 }
 
@@ -65,3 +75,11 @@ article
    ===================================================
 */
 
+@media screen and (min-width:481px)
+{
+	nav>ul
+	{
+		display:flex;
+		flex-direction:
+	}
+}
