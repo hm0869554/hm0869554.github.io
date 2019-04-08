@@ -1,0 +1,48 @@
+/*
+	Assignment: tv listing styling
+	Author: Hunter Murphy
+	Date: 4/8/19
+	*/
+
+html
+{
+	background-color:black;
+}
+
+td
+{
+	text-align:center;
+	background-color:rgb(164, 168, 169);
+}
+
+tr:hover td 
+{
+	background-color: yellow;
+}
+
+
+th
+{
+	background-color:rgb(164, 168, 169);
+}
+
+#Invisible /* Meant to hide empty cells from other styling*/
+{	
+	background-color:black;
+}
+
+#NBC
+{
+	background-color: cyan
+}
+
+#ABC
+{
+	background-color: red;
+}
+
+#TBS
+{
+	background-color: green;
+}
+
