@@ -20,7 +20,7 @@
    <link href="sb_reset.css" rel="stylesheet" />
    <link href="sb_styles.css" rel="stylesheet" />
    <link rel="stylesheet" href="sb_validate.css">
-   <link rel="stylesheet" href="sb_payment.html">
+   <link rel="stylesheet" href="sb_forms.css">
    <script src="sb_script.js"></script>
 </head>
 
@@ -53,17 +53,123 @@
 		<form id="payment" action="http:www.example.com/sb/payment" method="post">
 			<fieldset id="billing">
 				<legend>Billing Information (required)</legend>
-				<p>First Name: <input type="text" name="firstBox" required="yes"><br>
-				Last Name: <input type="text" name="lastBox" required="yes"><br>
-				Street Address: <input type="text" name="streetBox" required="yes"><br>
-				Street Address(2): <input type="text" name="SreetBox2" required="no"><br>
-				City: <input type="text" name="cityBox" required="yes"><br>
-				State: <input type="text" name="stateBox" required="yes"><br>
-				ZIP/Postal Code: <input type="text" name="zipBox" required="no"><br>
-				Country: <input type="text" name="country" required="yes"><br>
-				Phone: <input type="tel" name="phoneBox" required="yes">
-				</p>
-			</<fieldset>
+				<label>First Name:</label> <input type="text" name="firstBox" required><br>
+				<label>Last Name:</label> <input type="text" name="lastBox" required><br>
+				<label>Street Address:</label> <input type="text" name="streetBox" required><br>
+				<label>Street Address(2):</label> <input type="text" name="SreetBox2"><br>
+				<label>City:</label> <input type="text" name="cityBox" required><br>
+				<label>State:</label> <input type="text" name="stateBox"  list="state" required><br>
+				<datalist id="state">
+					<option value="AL">
+					<option value="AK">
+					<option value="AZ">
+					<option value="AR">
+					<option value="CA">
+					<option value="CO">
+					<option value="CT">
+					<option value="DE">
+					<option value="FL">
+					<option value="GA">
+					<option value="HI">
+					<option value="ID">
+					<option value="IL">
+					<option value="IN">
+					<option value="IA">
+					<option value="KS">
+					<option value="KY">
+					<option value="LA">
+					<option value="ME">
+					<option value="MD">
+					<option value="MA">
+					<option value="MI">
+					<option value="MN">
+					<option value="MS">
+					<option value="MO">
+					<option value="MT">
+					<option value="NE">
+					<option value="NV">
+					<option value="NH">
+					<option value="NH">
+					<option value="NJ">
+					<option value="NM">
+					<option value="NY">
+					<option value="NC">
+					<option value="ND">
+					<option value="OH">
+					<option value="OK">
+					<option value="OR">
+					<option value="PA">
+					<option value="RI">
+					<option value="SC">
+					<option value="SD">
+					<option value="TN">
+					<option value="TX">
+					<option value="UT">
+					<option value="VT">
+					<option value="VA">
+					<option value="WA">
+					<option value="WV">
+					<option value="WI">
+					<option value="WY">
+				</datalist>
+				<label>ZIP/Postal Code:</label> <input type="text" name="zipBox" pattern="^\d{5}(-\d{4})?$"><br>
+				<label>Country:</label> <input type="text" name="country" placeholder="United States" required><br>
+				<label>Phone:</label> <input type="tel" name="phoneBox" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required>
+				
+				
+			</fieldset>
+			<fieldset id="creditCard">
+				<legend>Credit Card (required)</legend>
+				<fieldset>
+					<label class="cardLabel"> 
+						<input name="cCard" value="amex" type="radio">
+						<img src="sb_amex.png">
+					</label>
+					<label class="Cardlabel">
+						<input name="cCard" value="discover" type="radio">
+						<img src="sb_discover.png">
+					</label>
+					<label class="cardLabel">
+						<input name="cCard" value="master" type="radio">
+						<img src="sb_master.png">
+					</label>
+					<label class="cardLabel">
+						<input name="cCard" value="visa" type="radio">
+						<img src="sb_visa.png">
+					</label>
+				</fieldset>
+				<label for="cardBox">Credit Card Number</label>
+				<input name="cardBox" type="text" required pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$">
+				<label for="expirationDate">Expiration Date</label>
+				<input name="expirationDate" list="monthList" placeholder="--Month--"required>
+				<input name="expirationDate" list="yearList" placeholder="Year"required>
+				<datalist id="monthList">
+					<option value="">--Month--</option>
+					<option value="01">January(01)</option>
+					<option value="02">February(02)</option>
+					<option value="03">March(03)</option>
+					<option value="04">April(04)</option>
+					<option value="05">May(05)</option>
+					<option value="06">June(06)</option>
+					<option value="07">July(07)</option>
+					<option value="08">August(08)</option>
+					<option value="09">September(09)</option>
+					<option value="10">October(10)</option>
+					<option value="11">November(11)</option>
+					<option value="12">December(12)</option>
+				</datalist>
+				<datalist id="yearList">
+					<option value="2019">2019</option>
+					<option value="2020">2020</option>
+					<option value="2021">2021</option>
+					<option value="2022">2022</option>
+					<option value="2023">2023</option>
+				</datalist>
+				<label for="cscBox">CSC</label>
+				<input id="cscBox" type="text" required pattern="^\d{3}$" maxlength="3" placeholder="nnn">
+				
+			</fieldset>
+			<button type="submit"><img src="sb_button.png" alt="next"></button>
 		</form>
       <aside>
          <h1>Menu Ideas</h1>
