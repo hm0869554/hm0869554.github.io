@@ -33,6 +33,27 @@ p {
    font-size: 1.2em;
 }
 
+table
+{
+	border-style:solid;
+	border-color:black;
+	border-width:2px;
+}
+#row1, #row3, #row5, #row7
+{
+	background-color:white;
+	
+}
+.skip
+{
+	opacity:0;
+}
+
+.skip:hover, .skip:focus
+{
+	opacity:1;
+	color:cyan;
+}
 
 .video-responsive{
     overflow:hidden;
