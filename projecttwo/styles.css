@@ -28,17 +28,6 @@ body {
    background-color:#a58855
 }
 
-@media screen and (min-width: 700px)
-{
-	#content{
-	margin: auto;
-	width:75%;
-	border-radius: 5px;
-	background-color:#bc7b12;
-	}
-	
-}
-
 .artStyle
 {
 	background-color:#e8ac17;
@@ -55,12 +44,21 @@ table
 	border-width:2px;
 }
 
+.button
+{
+	text-align:center;
+}
 nav
 {
 	background-color:#9fa3a8;
 	text-align:center
 }
 
+footer
+{
+	background-color:black;
+	color:white;
+}
 .rowOdd
 {
 	background-color:white;
@@ -92,3 +90,30 @@ nav
     width:100%;
     position:absolute;
 }
+
+/*Media Queries*/
+
+@media screen and (min-width: 601px)
+{
+	#content{
+	margin: auto;
+	width:75%;
+	border-radius: 5px;
+	background-color:#bc7b12;
+	}
+	#mobile
+	{
+		display:none;
+	}
+	
+}
+
+@media screen and (max-width: 600px)
+{
+	#desktop
+	{
+		display:none;
+	}
+}
+
+

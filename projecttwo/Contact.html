@@ -28,16 +28,36 @@
 				<h2>Contact Us</h2>
 			</article>
 			<form>
-				<fieldset>
+				<fieldset id="mobile">
 					<label>First Name</label> <input type="text" name="firstBox" required><br>
 					<label>Last Name</label> <input type="name" name="lastBox" required><br>
 					<label>Phone Number</label> <input type="tel" name="phoneBox" required><br>
 					<label>Email Address</label> <input type="email" name="email" required><br>
 					<label>How did you hear about us?</label> <input type="list" list="referenceList" name="referenceBox" required><br>
-					<label>If other please fill out box</label> <input type="text" name="otherBox"><br>
-					<input type="submit">
-					<input type="reset"
-					
+					<label>If other please fill out box</label> <textarea cols="50" rows="5"></textarea><br>
+					<div class="button">	
+						<input type="submit">
+						<input type="reset">
+					</div>
+					<datalist id="referenceList">
+						<option value="Online Ad"></option>
+						<option value="Radio"></option>
+						<option value="Web Search"></option>
+						<option value="Word of Mouth"></option>
+						<option value="Other"></option>	
+					</datalist>
+				</fieldset>
+				<fieldset id="desktop">
+					<label>First Name</label> <input type="text" name="firstBox" required><br>
+					<label>Last Name</label> <input type="name" name="lastBox" required><br>
+					<label>Phone Number</label> <input type="tel" name="phoneBox" required><br>
+					<label>Email Address</label> <input type="email" name="email" required><br>
+					<label>How did you hear about us?</label> <input type="list" list="referenceList" name="referenceBox" required><br>
+					<label>If other please fill out box</label> <textarea cols="50" rows="5"></textarea><br>
+					<div class="button">	
+						<input type="submit">
+						<input type="reset">
+					</div>
 					<datalist id="referenceList">
 						<option value="Online Ad"></option>
 						<option value="Radio"></option>
