@@ -28,10 +28,6 @@ body {
    background-color:#a58855
 }
 
-.artStyle
-{
-	background-color:#e8ac17;
-}
 
 p {
    font-size: 1.2em;
@@ -43,23 +39,7 @@ table
 	border-color:black;
 	border-width:2px;
 }
-
-.button
-{
-	text-align:center;
-}
-nav
-{
-	background-color:#9fa3a8;
-	text-align:center
-}
-
-footer
-{
-	background-color:black;
-	color:white;
-}
-.rowOdd
+#row1, #row3, #row5, #row7
 {
 	background-color:white;
 	
@@ -68,7 +48,6 @@ footer
 .skip
 {
 	opacity:0;
-	width:0px;
 }
 
 .skip:hover, .skip:focus
@@ -90,30 +69,3 @@ footer
     width:100%;
     position:absolute;
 }
-
-/*Media Queries*/
-
-@media screen and (min-width: 601px)
-{
-	#content{
-	margin: auto;
-	width:75%;
-	border-radius: 5px;
-	background-color:#bc7b12;
-	}
-	#mobile
-	{
-		display:none;
-	}
-	
-}
-
-@media screen and (max-width: 600px)
-{
-	#desktop
-	{
-		display:none;
-	}
-}
-
-
