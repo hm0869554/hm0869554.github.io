@@ -13,29 +13,90 @@
 /*Structural Styles */
 html
 {
-	background-color: white;
+	background-color: black;
+	color:white;
+}
+
+section
+{
+	background-color:#fc5d5d;
+	width:50%;
+	height:1000px;
+}
+
+article
+{
+	float:right;
+	clear:both;
+	width:100%;
+	position:relative;
+	top:-1044px;
+	color:white;
 }
 
 header
 {
 	padding-right: 100px;
-	padding-bottom: 250px;
-	background-color:blue;
+	padding-bottom: 400px;
+	background-color:#0936ba;
 }
 
 h1,h2,h3
 {
-	background-color:white;
+	background-color: #2499ab;
 	width:200px;
+}
+
+#family
+{
+	background-color: #a80707;
+	width:100%;
+	padding-left:10px;
+	padding-top:10px;
+	position:relative;
+	top:-25px;
+}
+
+#music
+{
+	padding-top:9px;
+	width:50%;
+	float:right;
+	padding-left:10px;
+	position:relative;
+	right:-10px;
+}
+#musicDescr
+{
+	float:right;
+	width:50%;
+	position:relative;
+	left:10px;
+	bottom:20px;
 }
 
 .leftShift
 {
 	float:left;
 	clear:left;
+	
+}
+
+Strong
+{
+	color:black;
+	float:left;
+	position:relative;
+	top:-10px;
 }
 
 /*Image Styles */
+img
+{
+	float:left;
+	clear:both;
+}
+
 
 #tlk
 {
@@ -43,8 +104,19 @@ h1,h2,h3
 	padding-top:100px;
 }
 
-img
+
+.Nixa
 {
-	float:left;
-	clear:left;
+	Float:left;
+	clear: right;
+	width:300px;
+	height:300px;
+	position:relative;
+	top:40px;
+	right:200px;
+}
+
+.imgRight
+{
+	float:right;
 }
