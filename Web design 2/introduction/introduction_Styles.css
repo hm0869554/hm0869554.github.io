@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/*
+	Style sheet for Web Design II introduction
+	
+	Author: Hunter Murphy
+	Date: 8/20/2019
+	
+	filename: introduction_Styles.css
+*/
+
+
+/*Structural Styles */
+
+header
+{
+	padding-right: 100px;
+	padding-bottom: 250px;
+	background-color:blue;
+}
+
+.txtLeft
+{
+	float:left;
+	clear:both;
+}
+
+/*Image Styles */
+
+.tlk
+{
+	height: 250px;
+	width: 350px;
+	transform: rotate(90deg);
+	padding-top:100px;
+}
+
+img
+{
+	float:left;
+	clear:left;
+}
