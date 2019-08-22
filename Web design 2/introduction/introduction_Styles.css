@@ -21,7 +21,7 @@ section
 {
 	background-color:#fc5d5d;
 	width:50%;
-	height:1000px;
+	height:700px;
 }
 
 article
@@ -30,7 +30,7 @@ article
 	clear:both;
 	width:100%;
 	position:relative;
-	top:-1044px;
+	top:-745px;
 	color:white;
 }
 
@@ -59,7 +59,7 @@ h1,h2,h3
 
 #music
 {
-	padding-top:9px;
+	padding-top:10px;
 	width:50%;
 	float:right;
 	padding-left:10px;
