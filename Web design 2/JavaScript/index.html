@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Subscribe to my webpage</title>
+    <link rel="stylesheet" href="contact.css">
+
+    <!--
+        Name: Hunter Murphy
+        Date: 8/31/2019
+        Assignment: Subscribe to my Webpage
+        Filename: index.html
+    -->
+</head>
+<body>
+    <header>
+        <h1>My First JavaScript Page!</h1>
+        <h3>This page will be a form that submits your name and 
+            contact preference</h3>
+            <br>
+            <br>
+        <p>It utilizes event handling to display your submitted data</p> 
+    </header>
+    <form>
+        <fieldset>
+            <form>  
+                <label for="fName">First Name</label> <br>
+                    <input type="text" id="fName"><br>
+                <label for="lName">Last Name</label> <br>
+                    <input type="text" id="lName"><br>
+                <label for="contact"></label> Prefered Contact Method: <br>
+                    <select name="Contact method" id="contact">
+                        <option value="E-mail">E-mail</option>
+                        <option value="Text">Text</option>
+                        <option value="Phone Call">Phone call</option>
+                        <option value="Carrier pidgeon">Carrier Pidgeon</option>
+                        <option value="Candygram">Candygram</option>
+                    </select>
+                    <br>
+                <input type="button" value="Subscribe" id="subscribe">
+            </form>
+        </fieldset>
+    </form>
+</body>
+</html>
