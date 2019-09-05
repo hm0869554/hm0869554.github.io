@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Subscribe to my webpage</title>
     <link rel="stylesheet" href="contact.css">
+    <script src="Subscribe.js"></script>
     <!--
         Name: Hunter Murphy
         Date: 8/31/2019
@@ -22,7 +23,6 @@
             <br>
         <p>It utilizes event handling to display your submitted data</p> 
     </header>
-    <form>
         <fieldset>  
             <label for="fName">First Name</label> <br>
                 <input type="text" id="fName"><br>
@@ -37,17 +37,11 @@
                     <option value="Candygram">Candygram</option>
                 </select>
                 <br>
-           <input type="button" value="Subscribe" id="subscribe"
-                 onclick="document.getElementById('subClick').innerHtml = document.getElementById('fName').value; +
-                document.getElementById('lName').value; +
-                document.getElementById('contact').value;" >
+           <button onclick=Joseph()>click me!</button>
+                 
             <div id="subClick">
-                <p id="fNameSub"></p>
-                <p id="lNameSub"></p>
-                <p id="contatSub"></p>
             </div>           
                 
         </fieldset>
-    </form>
 </body>
 </html>

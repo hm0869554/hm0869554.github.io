@@ -24,7 +24,10 @@ fieldset
     margin: auto;
 }
 
-div
+div > p
 {
-    background-color: #99ccff;
+    background-color: white;
+    width:25%;
+    margin:auto;
+    text-align: center;
 }
