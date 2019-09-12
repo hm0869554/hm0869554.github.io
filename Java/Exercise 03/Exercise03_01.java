@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class  {
+public class Exercise03_01 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -16,8 +16,8 @@ public class  {
 		a = input.nextDouble();
 		b = input.nextDouble();
 		c = input.nextDouble();
-		r1 = (-b + Math.pow((Math.pow(b, 2) - 4 * a * c), .5)/(2 * a));
-		r2 = (-b - Math.pow((Math.pow(b, 2) - 4 * a * c), .5)/(2 * a));
+		r1 = ((-b + Math.pow((Math.pow(b, 2) - (4 * a * c)), .5))/(2 * a));
+		r2 = ((-b - Math.pow((Math.pow(b, 2) - (4 * a * c)), .5))/(2 * a));
 		discriminant = Math.pow(b, 2) - 4 * a * c;
 		if(discriminant > 0){
 			System.out.println("The equation has two roots " + r1 +" and " + r2);
