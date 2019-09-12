@@ -1,23 +1,19 @@
 var clicked = 0;
-
+var counter = 0;
+var myPictures = ["Mike.jpg",
+"Sully.png",
+"Roz.jpg",
+"Randall.jpg",
+"Cecillia.jpg",
+"Boo.jpg",
+"Waternoose.jpg",
+"Fungus.jpg"]
 function imageSwap(Image)
 {
+    counter++;
+    if (counter > myPictures.length -1){
+        counter = 0;
+    }
+    Image = myPictures[counter];
     document.getElementById('Shift').src = Image;
 }
-
-document.getElementById('Shift').addEventListener('dblclick', function(){
-    if (clicked % 2 == 0){
-    document.getElementById('mike').src = "Cecillia.jpg";
-    document.getElementById('Sully').src = "Boo.jpg";
-    document.getElementById('Randall').src = "Fungus.jpg";
-    document.getElementById('Roz').src = "Waternoose.jpg";
-    clicked = clicked + 1;}
-    else {
-        document.getElementById('mike').src = "Mike.jpg";
-        document.getElementById('Sully').src = "Sully.png";
-        document.getElementById('Randall').src = "Randall.jpg";
-        document.getElementById('Roz').src = "Roz.jpg";
-        clicked = clicked + 1;
-    }
-
-})
