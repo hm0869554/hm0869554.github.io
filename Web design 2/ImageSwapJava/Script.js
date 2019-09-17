@@ -8,6 +8,8 @@ var myPictures = ["Mike.jpg",
 "Boo.jpg",
 "Waternoose.jpg",
 "Fungus.jpg"]
+
+var myTimer = setInterval(imageSwap, 3000);
 function imageSwap(Image)
 {
     counter++;
