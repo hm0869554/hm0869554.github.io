@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Data Validation</h1>
+    <div id="theTimer"></div>
+
+    <form action="thankyou.html" method="GET">
+            <label for="userName">Name:</label>
+                <input type="text" name="userName"><br>
+            <label for="Email">Email</label>
+                <input type="text" name="Email"><br>
+            <label for="phone">Phone number (xxx)-xxx-xxxx format</label>
+                <input type="text" name="phone"><br>
+            <label for="quantity">Quantity of items</label>
+                <select name="quantity" id="quantity"></select><br>
+            <label for="items">items</label>
+                <select name="items" id="items"></select><br>
+            <!--<input type="button" value="Validate" onclick="valForm(this.form)"-->
+            <input type="submit" value="Validate" onclick="return valForm(this.form)">
+
+            <div id="err"></div>
+            <div id="valPhone"></div>
+    </form>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
