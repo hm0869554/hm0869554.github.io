@@ -11,9 +11,9 @@ function valForm(form)
     if(form.userName.value  == "")
     {
         document.getElementById('err').innerHTML = 
-        "please fill out pink fields"
+        "please fill out pink fields";
 
-        form.userName.style.backgroundColor = "pink"
+        form.userName.style.backgroundColor = "pink";
         isValid = false;
     }
     else
@@ -23,20 +23,31 @@ function valForm(form)
     if(form.Email.value == "")
     {
         document.getElementById('err').innerHTML =
-        "please fill out pink fields"
+        "please fill out pink fields";
 
-        form.Email.style.backgroundColor = "pink"
+        form.Email.style.backgroundColor = "pink";
         isValid = false;
     }
     else
     {
-        form.Email.styel.backgroundColor="white"
+        form.Email.styel.backgroundColor="white";
     }
 
-    if(form.phone.value == )
+
+    var phoneNumber = form.phone.value ;
+    var regex = /\d{3}[-]?\d{3}[-]?\d{4}/
+    var phoneValid = regex.test(phoneNumber)
+    if(!phoneValid)
     {
         document.getElementById('valPhone').innerHTML=
-        "Please enter a valid phone number"
+        "Please enter a valid phone number";
+        form.phone.style.backgroundColor = "pink";
+        isValid=false;
+    }
+
+    else
+    {
+        form.phone.style.backgroundColor = "white";
     }
 
     //if (isValid == true)

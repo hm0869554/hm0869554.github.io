@@ -1,27 +1,26 @@
 import java.util.Scanner;
 
-public class Exercise04_11 {
+public class Scratch {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner input = new Scanner(System.in);
-		int x;
-		String y;
+		Scanner stdin = new Scanner(System.in);
 		
-		System.out.println("Please enter a number between or including 0 and 15: ");
-		x = input.nextInt();
+		int consec = 0;
+		int number;
+		int prev;
 		
-		if(x > 15 || x < 0) {
-			System.out.println(x + " is an invalid input");
+		number = stdin.nextInt();
+		
+		while(number >= 0) 
+		{
+			if(prev == number) 
+			{
+				consec++;
+			}
+			prev = number;
 		}
-		else	
-		{y = Integer.toHexString(x);
-		
-		System.out.println(y);}
-		
-		
-		
-		
+		System.out.println(consec);
 		
 				
 			
