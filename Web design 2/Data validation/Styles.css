@@ -1,26 +1,52 @@
 html
 {
-    background-color: grey;
+    background-color: black;
     text-align: center;
+    color: black;
 }
 
 
 body
 {
-    margin-top: 10%;
+    /*margin-top: 10%;*/
     position: center;
     background-color: black;
     height: 100%;
+    width: 800px;
+    text-align: center;
+    margin: auto;
 }
 div
 {   
     background-color: rgb(37, 175, 44);
-    width: 50% ;
+    width: 384px ;
+    position: relative;
+    margin: auto;
+    padding-top:1%; 
     
+    color: black;
+
 
 }
 
 form
 {
     text-align: center;
+}
+
+h1
+{
+    background-color: white;
+    padding-top: 127px;
+    
+}
+
+#cheech
+{
+    float:left;
+}
+
+#chong
+{
+    float:right;
 }

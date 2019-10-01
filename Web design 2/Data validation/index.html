@@ -7,26 +7,33 @@
     <link rel="stylesheet" href="Styles.css">
     <title>Document</title>
 </head>
-<body>
+<body onload= list()>
+    <img id="cheech" src="Cheech.jpg" alt="Cheech Marin" height="165px" width="208px">
+    <img id="chong" src="Chong.jpg" alt="Tommy Chong" height="165px">
     <h1>Cheech's Pizza</h1>
     <div id="theTimer"></div>
     <div>
-    <form action="thankyou.html" method="GET">
+        <p>all Pizza's large and $5</p>
+    <form>
             <label for="userName">Name:</label>
                 <input type="text" name="userName"><br>
-            <label for="Email">Email</label>
-                <input type="text" name="Email"><br>
             <label for="phone">Phone number </label>
                 <input type="text" name="phone"><br>
             <label for="quantity">Quantity of items</label>
-                <select name="quantity" id="quantity"></select><br>
-            <label for="items">items</label>
-                <select name="items" id="items"></select><br>
+                <select name="quantity" id="quantity" onclick = "itemSelect(this)">
+                    <option value="default">0</option>
+                </select><br>
+            <label for="items">Pizza type</label>
+                <select name="items" id="items" onclick="itemSelect(this)">
+                    <option value="default">Cheese</option>
+                </select><br>
             <!--<input type="button" value="Validate" onclick="valForm(this.form)"-->
-            <input type="submit" value="Validate" onclick="return valForm(this.form)">
+            <input type="button" value="Order" onclick="valForm(this.form)">
 
             <div id="err"></div>
             <div id="valPhone"></div>
+            <div id="orderTotal"></div>
+            
     </form>
     </div>
     <script src="scripts.js"></script>

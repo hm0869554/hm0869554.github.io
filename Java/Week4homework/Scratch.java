@@ -4,36 +4,18 @@ public class Scratch {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner stdin = new Scanner(System.in);
-
-		int n;
-		n = 10;
-		n = stdin.nextInt();
-		while (n > 0){
-
-			if(n>100) {
-				System.out.print(n + " ");
-				n = stdin.nextInt();
-			}
-
-			else
-			{
-				n = stdin.nextInt();
-			}
+		Scanner input = new Scanner(System.in);
+		int longest = 0;
+		int count = 0;
+		while(input.hasNext()) {
+		int length = input.next().length();
+		if(length > longest) {
+		count = 1;
+		longest = length;
+		} else if(length == longest) {
+		count ++;
 		}
-
-		while(number >= 0)
-		{
-			if(prev == number)
-			{
-				consec++;
-			}
-			prev = number;
 		}
-		System.out.println(consec);
-
-
-
 	}
 
 }
