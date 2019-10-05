@@ -1,0 +1,35 @@
+html{
+    
+    background-color: green;
+    width: 1000px;
+    float: center;
+}
+body{
+    background-color: rgb(4, 80, 4);
+    width: 1000px;
+    margin: auto;
+    float: center;
+}
+
+#Mike{
+    position: absolute;
+    top:550px;
+    left: 550px;
+    height: 100px;
+    width: 100px;
+}
+
+#Randall{
+    position: absolute;
+    top:450px;
+    left: 550px;
+    height: 100px;
+    width: 100px;
+}
+
+#racetrack{
+    position: absolute;
+    top:450px;
+    left: 500px;
+    height: 175px;
+}
