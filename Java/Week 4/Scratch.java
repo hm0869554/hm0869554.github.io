@@ -4,20 +4,15 @@ public class Scratch {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int total;
-		int k;
+		double[]temps = {52, 54, 56, 57, 81};
+		double avgTemp;
 		
-		total = 0;
-		for(k = 1; k <=50; k++)
+		for(int k = 0; k < temps.length; k++)
 		{
-			total = total + k * k;
+			double total += temps[k];
 		}
-		
-		
-		
-		
-		System.out.println(total);
-				
+		avgTemp = total / temps.length;
+		System.out.println(avgTemp);
 			
 	}
 
