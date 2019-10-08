@@ -1,0 +1,62 @@
+html{
+    
+    background-color: green;
+    width: 1000px;
+    float: center;
+}
+body{
+    background-color: green;
+    width: 1000px;
+    margin: auto;
+    float: center;
+}
+
+button{
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+/*Image Styling*/
+#Mike{
+    position: absolute;
+    top:540px;
+    left: 300px;
+    height: 100px;
+    width: 100px;
+}
+
+#Randall{
+    position: absolute;
+    top:434px;
+    left: 300px;
+    height: 100px;
+    width: 100px;
+}
+
+#racetrack{
+    position: absolute;
+    top:440px;
+    left: 250px;
+    height: 190px;
+}
+
+#Winner{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    left:835px; 
+    top: 25px;
+}
+
+#Light{
+    position: absolute;
+    top: 300px;
+
+}
+
+#WinnerMessage{
+    position: absolute;
+    top: 150px;
+    left: 790px;
+}

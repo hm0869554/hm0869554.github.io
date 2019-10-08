@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--
+        Name : Hunter Murphy
+        Date: 10/1/2019
+        Project: A day at the races
+    -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>A Day at the races</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
-        <header>
-            <h1>A Day at the Races</h1>
-        </header>
-        <div>
-            <img src="Racetrack.jpg" alt="">
-            <img src="MikeRunning.png" alt="">
-            <img src="RandallRunning.png" alt="">
-            <img src="Red light.png" alt="">
-        </div>
+    <img src="Racetrack.jpg" alt="race track" id="racetrack">
+    <img src="MikeRunning.png" alt="" id="Mike">
+    <img src="RandallRunning.png" alt="" id="Randall">
+    <img src="Red light.png" onclick="StartRace()"alt="Red light" id="Light">
+    <img src="Green.png" id="Winner"alt="" onclick="ResetRace()">
+    <img src="Green.png" alt="" id="WinnerMessage">
 </body>
+<script src="Scripts.js"></script>
 </html>
