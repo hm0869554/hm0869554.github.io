@@ -6,7 +6,7 @@ function order(item, qty, Price){
     {
         var subTotal = this.orderQty * this.orderPrice;
         subTotal = Math.ceil(subTotal * 100)/100;
-        return `${this.orderItem} and total is ${subTotal}`
+        return `${this.orderItem} total is $${subTotal}`
     }
 }
 
@@ -30,4 +30,10 @@ document.querySelector('h4').addEventListener('click', function(){
     }
     
     document.getElementById('orders').innerHTML = myList;
+})
+
+document.getElementById('orders').addEventListener('click',function(e){
+    alert(e.target.id)
+    document.querySelector('h3').innerHTML = aryOrders[e.target.id].displayOrder();
+
 })
