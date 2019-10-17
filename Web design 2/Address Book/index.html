@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <h2>Address Book</h2>
+    <div id="ContactInfo">
+        
+        <label for="">Name:</label>
+        <address id = "name">First Name</address>
+        <address id = "Lname">Last Name</address>
+        <label for="">Number</label>
+        <address id = "phone">Phone number</address>
+        <label for="">Email</label>
+        <address id = "email">Email Address</address>
+        <img src="Default.png" id="contactImage" alt="">
+    </div> 
+    
+    <div id="Contacts">
+            <legend>Contacts</legend>   
+        <ul onclick="changeContact(0)">
+            Mike 
+            Wazowski
+        </ul>
+        <ul onclick="changeContact(1)">
+            James 
+            Sullivan
+        </ul>
+        <ul onclick="changeContact(2)">
+            Roz
+        </ul>
+        <ul onclick="changeContact(3)">
+            Randall Boggs
+        </ul>
+        <ul onclick="changeContact(4)">
+            Henry Waternoose
+        </ul>
+    </div>
+    <form action="" id="addContact">
+        <legend>Add Contact</legend>
+        <label for="">First Name</label>
+            <input type="text" id="FName"><br>
+        <label for="">Last Name</label>
+            <input type="text" id="LName"><br>
+        <label for="">Phone Number</label>
+            <input type="tel" id="Phone"><br>
+        <label for="">Email</label>
+            <input type="text" id="Email"><br>
+        
+    </form>
+    <button onclick="addContact()">Add Contact</button>
+</body>
+</html>
