@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <h1>My Nue Vue</h1>
+
+    <div id="app">
+        {{message}}
+
+        <input v-model = "message">
+
+        <!--<button v-on:click = "message = 'new message'"> change the message</button>-->
+        <button v-on:click = "changeMessage">change the message</button>
+        <ul>
+            <!--<li>{{ todos[0]}}</li>
+            <li>{{ todos[1]}}</li>-->
+            <li v-for = "todo in todos" @click = "sendMessage(todo)">{{todo}}</li>
+        </ul>
+        <button v-on:click = "addItem">Add the Item in the Input Box</button>
+        <hr>
+        <button v-on:click = "increments">Increment Number of Clicks</button>
+        <p v-show = "click > 0">Number of Clicks: {{click}}</p>
+        <p>Number of clicks multiplied by 5: {{click5}}</p>
+        <hr>
+        <h4>computed properties</h4>
+        <p>Number of Clicks + 10: {{click10}}</p>
+        <button @click = "decrements">Decrement things</button>
+
+
+    </div>
+
+    <script>
+        var app = new Vue(
+            {
+                el: "#app",
+                data: 
+                {
+                    message: "Alo Lume",
+                    todos: ["learn HTML" , "Learn CSS" , "Learn Javascript", "Learn Vue"],
+                    click: 0,
+                    click5: 0,
+                },
+                methods:
+                {
+                    sendMessage(theMess)
+                    {
+                        this.message = theMess
+                    },
+                    changeMessage()
+                    {
+                        this.message = "Messaged from the method";
+                    },
+                    addItem()
+                    {
+                        this.todos.push(this.message);
+                    },
+                    increments()
+                    {
+                        this.click++;
+                        this.click5 = this.click * 5;
+                    },
+                    decrements()
+                    {
+                        this.click--;
+                        this.click5 -= 5;
+                    }
+                },
+                computed:
+                {
+                    click10()
+                    {
+                        return this.click + 10;
+                    }
+                }
+            }
+        )
+    </script>
+
+</body>
+</html>
