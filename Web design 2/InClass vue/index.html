@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+<body>
+    <h1>In Class Vue</h1>
+
+    <div id="app">
+        <div id="item">
+            <br>
+            <ul>
+                <li v-for = "item in items" @click = "productSelect(item.title, item.price)">{{item.title}}  ${{item.price}}</li>
+            </ul>
+        </div>
+        <div id="sum">
+                <p >item selected: {{itemSelected}}</p>
+            <h4 >total ${{total}}</h4>
+
+        </div>
+    </div>
+
+    <script>
+        var app = new Vue(
+            {
+                el: "#app",
+                data:
+                  {  
+                    total: 0,
+                    items: [{title: "Hot Dog", price: 2.00},{title: "Soda", price: 1.50}, {title: "Pretzel", price: 2.50},{title: "Candy", price:1.00}] ,
+                    itemSelected:"No Item Selected yet"
+                  },
+                methods:
+                {
+                    productSelect(item, price)
+                    {
+                        this.itemSelected = item;
+                        this.total = this.total + price;
+                    }
+                }          
+            }
+        )
+    </script>
+</body>
+</html>
