@@ -1,0 +1,38 @@
+html
+{
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(219,61,37,1) 0%, rgba(232,153,23,1) 60%, rgba(255,252,0,1) 100%);
+    height: 100%;
+    
+}
+body
+{
+    width: 80%;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(83,76,75,1) 0%, rgba(83,76,75,1) 27%, rgba(4,2,0,1) 78%, rgba(0,0,0,1) 100%);
+    color: white;
+    margin: auto;
+    border-radius:35px ;
+    height: 95%;
+
+}
+
+div
+{
+    text-align: center;
+    float: left;
+}
+
+strong
+{
+    font-size: 24px;
+}
+
+#Title
+{
+    font-size: 36px;
+}
+
+ul
+{
+    float: left;
+}
