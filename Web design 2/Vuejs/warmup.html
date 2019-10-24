@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Vue Tue</h1>
+    <div id="app">
+        <p v-show = "cartItem > 0">Cart Items: {{cartItem}}</p>
+        <p>Item Selected: {{itemSelected}}</p>
+        <div v-for="item in items">
+            <p @click = "updateSelected(item.name)">{{item.name}}</p>
+            <p>{{item.name}}s ordered {{item.ordered}}</p>
+            <img v-bind:src= "item.imgSrc" v-bind:alt="item.name">
+            <button v-on:click = "orderThis(item)">Order {{item.name}}</button>
+            <button v-on:click = "removeOne(item)" v-show = "item.ordered > 0">Remove one {{item.name}}</button>
+        </div>
+
+    </div>
+    
+
+
+
+
+
+    <script>
+        var app = new Vue(
+            {
+                el:"#app",
+                data:
+                {
+                    items: [
+                        {name: "Mike", ordered: 0, imgSrc: "Mike.jpg"},
+                        {name: "Sully", ordered: 0, imgSrc: "Sully.png"}
+                    ],
+                    cartItem:0,
+                    itemSelected: "None Selected"
+                },
+                methods:{
+                    updateSelected(theName)
+                    {
+                        this.itemSelected = theName
+                    },
+                    orderThis(theItem)
+                    {
+                        theItem.ordered++;
+                        this.cartItem++;
+                        this.itemSelected = theItem.name;
+                    },
+                    removeOne(theItem)
+                    {   
+                        
+                        
+                        theItem.ordered--;
+                        this.cartItem--;
+                        this.itemSelected = theItem.name;
+                        
+                    }
+                }
+            }
+        )    
+    </script>
+</body>
+</html>
