@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--Name: Hunter Murphy
+        Date: 11/5/2019
+        Project: Exam-->
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+    <h1>Popular TV Shows</h1>
+    <div id="popularShows">
+        <section v-for= " result in results">
+            <h1>Title: {{result.original_name}}</h1>
+            <img v-bind:src = "'http://image.tmdb.org/t/p/w300' + result.poster_path">
+            <p><strong>Description: </strong> {{result.overview}}</p>
+            <h4>Rating: {{result.vote_average}}/10</h4>
+        </section>
+    </div>
+
+
+    <script>
+        var app = new Vue(
+            {
+                el: "#popularShows",
+                data:
+                {
+                    results: []
+                },
+                mounted()
+                {
+                    axios.get('https://api.themoviedb.org/3/tv/popular?api_key=a566a820a44ecc9ad88867dda012db07&language=en-US&page=1')
+                    .then(response => (this.results = response.data.results))
+                }
+            }
+        )
+    </script>
+</body>
+</html>
