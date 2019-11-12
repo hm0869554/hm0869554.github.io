@@ -1,2 +1,19 @@
 
 Web design 2/introduction/jdk-12.0.2_windows-x64_bin.exe
+*.js
+Web design 2/npmIntro/node_modules/ansi-styles/license
+*.json
+*.md
+*.flow
+Web design 2/npmIntro/node_modules/chalk/license
+*.ts
+Web design 2/npmIntro/node_modules/color-convert/LICENSE
+Web design 2/npmIntro/node_modules/color-name/.npmignore
+Web design 2/npmIntro/node_modules/color-name/LICENSE
+Web design 2/npmIntro/node_modules/escape-string-regexp/license
+Web design 2/npmIntro/node_modules/has-flag/license
+Web design 2/npmIntro/node_modules/moment/LICENSE
+Web design 2/npmIntro/node_modules/supports-color/license
+*.zip
+*.jpg
+*.js
