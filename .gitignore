@@ -1,2 +1,20 @@
 
 Web design 2/introduction/jdk-12.0.2_windows-x64_bin.exe
+*.json
+*.flow
+*.md
+*.ts
+Web design 2/npmIntro/node_modules/color-convert/LICENSE
+*.js
+Web design 2/npmIntro/node_modules/color-name/.npmignore
+*.docx
+Web design 2/npmIntro/node_modules/ansi-styles/license
+Web design 2/npmIntro/node_modules/chalk/license
+Web design 2/npmIntro/node_modules/color-name/LICENSE
+Web design 2/npmIntro/node_modules/escape-string-regexp/license
+Web design 2/npmIntro/node_modules/has-flag/license
+Web design 2/npmIntro/node_modules/moment/LICENSE
+Web design 2/npmIntro/node_modules/supports-color/license
+*.js
+*.docx
+Web design 2/A day at the races/Informative Speech Topic Proposal.docx
