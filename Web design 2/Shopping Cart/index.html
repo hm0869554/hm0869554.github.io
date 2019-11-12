@@ -9,18 +9,69 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
-    <h1>Shopping Cart</h1>
+    <h1>Cereal Emporium</h1>
 
-    <div id="#app">
-
-
+    <div id="app">
+            <div id="subTotal" v-show = "totalItems > 0">
+                    <h2>Cart</h2>
+                    <ul>Items in Cart: {{totalItems}}</ul>
+                    <ul v-show = "items[0].ItemQty > 0">{{items[0].ItemQty}} Box(es) of {{items[0].Name}}  <button v-on:click = "removeOne(items[0])" class="totalButton">Remove One Item</button></ul>
+                    <ul v-show = "items[1].ItemQty > 0">{{items[1].ItemQty}} Box(es) of {{items[1].Name}}  <button v-on:click = "removeOne(items[1])" class="totalButton">Remove One Item</button></ul>
+                    <ul v-show = "items[2].ItemQty > 0">{{items[2].ItemQty}} Box(es) of {{items[2].Name}}  <button v-on:click = "removeOne(items[2])" class="totalButton">Remove One Item</button></ul>
+                    <ul v-show = "items[3].ItemQty > 0">{{items[3].ItemQty}} Box(es) of {{items[3].Name}}  <button v-on:click = "removeOne(items[3])" class="totalButton">Remove One Item</button></ul>
+                    <ul>Total for Order: ${{subTotal}}</ul>
+        
+                </div>
+        <div id="ItemList">
+            <ul v-for = "item in items">
+                <img v-bind:src = "item.imgSrc" alt="">
+                <p>Name: {{item.Name}}</p>
+                <p>Price: ${{item.price}}</p>
+                <p>Stock left: {{item.stock}}</p>
+                <p>Order Quantity: {{item.ItemQty}}</p>
+                <button v-on:click ="orderThis(item)" v-show = "item.stock > 0">Add {{item.Name}} to Order</button>
+                <button v-on:click ="removeOne(item)" v-show = "item.ItemQty > 0">Remove One Item</button>
+            </ul>
+        </div>
+        
     </div>
     
 
     <script>
         var app = new Vue(
             {
-
+                el: "#app",
+                data:
+                {   
+                    subTotal: 0,
+                    totalItems: 0,
+                    items:[{Name:"Cap'n Crunch", price:3, imgSrc: "Cap'n Crunch.jpg", ItemQty:0, stock:7},
+                    {Name:"Trix", price:3.6, imgSrc: "Trix.jpg", ItemQty:0, stock: 3},
+                    {Name: "Corn Pops", price:2.5 , imgSrc: "Cornpops.jpg", ItemQty:0, stock: 20},
+                    {Name: "Fruity Pebbles", price:3.1, imgSrc: "Pebbles.jpg", ItemQty:0, stock: 2}]
+                    
+                },
+                methods:
+                    {
+                        orderThis(theItem)
+                        {   
+                            theItem.ItemQty++;
+                            theItem.stock--;
+                            this.subTotal = this.subTotal + theItem.price;
+                            this.subTotal = Math.round(this.subTotal*100)/100;
+                            this.totalItems++;
+                            console.log(this.subTotal);
+                        },
+                        removeOne(theItem)
+                        {
+                            theItem.ItemQty--;
+                            theItem.stock++;
+                            this.subTotal = this.subTotal - theItem.price;
+                            this.subTotal = Math.round(this.subTotal*100)/100;
+                            this.totalItems--;
+                            console.log(this.subTotal);
+                        }
+                    }
             }
         )
     </script>

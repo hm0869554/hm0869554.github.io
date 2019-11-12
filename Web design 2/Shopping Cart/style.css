@@ -1,0 +1,57 @@
+html
+{
+    background: linear-gradient(to top, #59c173, #a17fe0, #5d26c1);
+    color:white;
+}
+
+img
+{
+    height: 280px;
+    width: 180;
+}
+
+
+div
+{
+    margin: auto;
+}
+
+#subTotal
+{
+    float: right;
+    clear: both;
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+    margin-right: 40px;
+    border: white 4px solid;
+    border-radius: 10px ;
+}
+
+button
+{
+    color: white;
+    background-color: #4eb5f1;
+    border: solid 1px white;
+    border-radius: 5px;
+}
+
+h2
+{
+    text-align: center;
+}
+
+.totalButton
+{
+    float: right;
+    margin: 0px 20px;
+}
+
+h1
+{
+    text-align: center;
+}
+
+li
+{
+    background-color: black;
+}
+
